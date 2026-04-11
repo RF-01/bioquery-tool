@@ -15,8 +15,20 @@ filtering noise (low-evidence IEA terms), prioritizing experimentally supported
 biology, and structuring the result into a readable summary.
 """
 
+import re
 from collections import defaultdict
 from typing import Dict, Any, List
+
+
+def clean_function_text(text: str) -> str:
+    """Strip inline PubMed citations and extra whitespace from UniProt function text."""
+    # Remove "(PubMed:123, PubMed:456, ...)" blocks
+    text = re.sub(r"\s*\(PubMed:[^)]*\)", "", text)
+    # Remove stray "(By similarity)" / "(Probable)" annotations
+    text = re.sub(r"\s*\((By similarity|Probable|PROSITE-ProRule:[^)]*)\)", "", text)
+    # Collapse whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 # GO evidence-code quality tiers (higher = stronger biological support)
 EVIDENCE_TIERS = {
@@ -42,6 +54,7 @@ def rank_go_terms(go_annotations: List[Dict[str, Any]],
     """
     Group GO annotations by aspect and return the top N per aspect,
     ranked by evidence quality (descending), then term name.
+    Deduplicates by term name within an aspect, keeping the best-evidence copy.
     """
     by_aspect = defaultdict(list)
     for ann in go_annotations:
@@ -49,10 +62,18 @@ def rank_go_terms(go_annotations: List[Dict[str, Any]],
 
     ranked = {}
     for aspect, anns in by_aspect.items():
-        ranked[aspect] = sorted(
+        # Sort so best evidence comes first, then dedupe by term name
+        anns_sorted = sorted(
             anns,
             key=lambda a: (-evidence_score(a.get("evidence")), a.get("term") or "")
-        )[:top_n]
+        )
+        seen_terms, deduped = set(), []
+        for a in anns_sorted:
+            name = (a.get("term") or "").lower().strip()
+            if name and name not in seen_terms:
+                seen_terms.add(name)
+                deduped.append(a)
+        ranked[aspect] = deduped[:top_n]
     return ranked
 
 
@@ -72,34 +93,40 @@ def summarize(parsed: Dict[str, Any],
     parts.append(f"{name} ({gene}, {organism}) is a protein of {length} amino acids.")
 
     if parsed.get("function_text"):
-        first = parsed["function_text"][0]
+        first = clean_function_text(parsed["function_text"][0])
         if len(first) > 350:
             first = first[:347] + "..."
         parts.append(f"Function: {first}")
 
     if parsed.get("subcellular_location"):
-        locs = ", ".join(parsed["subcellular_location"][:4])
+        # Dedupe while preserving order
+        seen_locs, unique_locs = set(), []
+        for loc in parsed["subcellular_location"]:
+            if loc not in seen_locs:
+                seen_locs.add(loc)
+                unique_locs.append(loc)
+        locs = "; ".join(unique_locs[:4])
         parts.append(f"Localized to: {locs}.")
 
     bp = ranked_go.get("Biological Process", [])
     if bp:
         parts.append("Top biological processes: " +
-                     ", ".join(t["term"] for t in bp) + ".")
+                     "; ".join(t["term"] for t in bp) + ".")
 
     mf = ranked_go.get("Molecular Function", [])
     if mf:
         parts.append("Top molecular functions: " +
-                     ", ".join(t["term"] for t in mf) + ".")
+                     "; ".join(t["term"] for t in mf) + ".")
 
     cc = ranked_go.get("Cellular Component", [])
     if cc:
         parts.append("Cellular components: " +
-                     ", ".join(t["term"] for t in cc) + ".")
+                     "; ".join(t["term"] for t in cc) + ".")
 
     if pathways:
         # KEGG names often look like "p53 signaling pathway - Homo sapiens (human)"
         names = [p["name"].split(" - ")[0] for p in pathways[:6]]
-        parts.append(f"Participates in KEGG pathways including: {', '.join(names)}.")
+        parts.append(f"Participates in KEGG pathways including: {'; '.join(names)}.")
 
     return {
         "narrative": " ".join(parts),

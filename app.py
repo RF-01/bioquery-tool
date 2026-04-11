@@ -8,6 +8,7 @@ Run with:
 
 import streamlit as st
 from pipeline import run_pipeline
+from interpreter import clean_function_text
 
 st.set_page_config(page_title="Unified Gene/Protein Query", layout="wide")
 
@@ -61,10 +62,13 @@ if go_btn:
         with tab1:
             st.markdown("**Function**")
             for f in parsed["function_text"]:
-                st.write("•", f)
+                st.write("•", clean_function_text(f))
             st.markdown("**Subcellular Location**")
+            seen_locs = set()
             for s in parsed["subcellular_location"]:
-                st.write("•", s)
+                if s not in seen_locs:
+                    seen_locs.add(s)
+                    st.write("•", s)
             st.markdown("**Keywords**")
             st.write(", ".join(parsed["keywords"][:30]))
 

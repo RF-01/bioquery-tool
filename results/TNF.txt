@@ -1,0 +1,103 @@
+======================================================================
+  Tumor necrosis factor  (TNF)
+  UniProt: P01375   Length: 233 aa
+  GO terms: 193   KEGG pathways: 67
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Tumor necrosis factor (TNF, Homo sapiens) is a protein of 233 amino acids. Function: Cytokine that binds to TNFRSF1A/TNFR1 and TNFRSF1B/TNFBR. It is mainly secreted by macrophages and can induce cell death of certain tumor cell lines. It is potent pyrogen causing fever by direct action or by stimulation of interleukin-1 secretion and is implicated in the induction of cachexia, Under certain conditions it can stimulate cell proli... Localized to: Cell membrane; Membrane; Secreted. Top biological processes: antiviral innate immune response; cellular response to ionizing radiation; cellular response to nicotine; chronic inflammatory response to antigenic stimulus; embryonic digestive tract development. Top molecular functions: cytokine activity; identical protein binding; protease binding; transcription cis-regulatory region binding; tumor necrosis factor receptor binding. Cellular components: cell surface; extracellular space; membrane raft; plasma membrane; extracellular region. Participates in KEGG pathways including: Antifolate resistance; MAPK signaling pathway; Cytokine-cytokine receptor interaction; Viral protein interaction with cytokine and cytokine receptor; NF-kappa B signaling pathway; Sphingolipid signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0009986   cell surface                                            [IDA]
+  GO:0005615   extracellular space                                     [IDA]
+  GO:0045121   membrane raft                                           [IDA]
+  GO:0005886   plasma membrane                                         [IDA]
+  GO:0005576   extracellular region                                    [TAS]
+
+Molecular Function:
+  GO:0005125   cytokine activity                                       [IDA]
+  GO:0042802   identical protein binding                               [IDA]
+  GO:0002020   protease binding                                        [IPI]
+  GO:0000976   transcription cis-regulatory region binding             [IDA]
+  GO:0005164   tumor necrosis factor receptor binding                  [IDA]
+
+Biological Process:
+  GO:0140374   antiviral innate immune response                        [IDA]
+  GO:0071479   cellular response to ionizing radiation                 [IDA]
+  GO:0071316   cellular response to nicotine                           [IDA]
+  GO:0002439   chronic inflammatory response to antigenic stimulus     [IMP]
+  GO:0048566   embryonic digestive tract development                   [IEP]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa01523     Antifolate resistance - Homo sapiens (human)
+  hsa04010     MAPK signaling pathway - Homo sapiens (human)
+  hsa04060     Cytokine-cytokine receptor interaction - Homo sapiens (human)
+  hsa04061     Viral protein interaction with cytokine and cytokine receptor - Homo sapiens (human)
+  hsa04064     NF-kappa B signaling pathway - Homo sapiens (human)
+  hsa04071     Sphingolipid signaling pathway - Homo sapiens (human)
+  hsa04150     mTOR signaling pathway - Homo sapiens (human)
+  hsa04210     Apoptosis - Homo sapiens (human)
+  hsa04217     Necroptosis - Homo sapiens (human)
+  hsa04350     TGF-beta signaling pathway - Homo sapiens (human)
+  hsa04380     Osteoclast differentiation - Homo sapiens (human)
+  hsa04612     Antigen processing and presentation - Homo sapiens (human)
+  hsa04620     Toll-like receptor signaling pathway - Homo sapiens (human)
+  hsa04621     NOD-like receptor signaling pathway - Homo sapiens (human)
+  hsa04622     RIG-I-like receptor signaling pathway - Homo sapiens (human)
+  hsa04625     C-type lectin receptor signaling pathway - Homo sapiens (human)
+  hsa04640     Hematopoietic cell lineage - Homo sapiens (human)
+  hsa04650     Natural killer cell mediated cytotoxicity - Homo sapiens (human)
+  hsa04657     IL-17 signaling pathway - Homo sapiens (human)
+  hsa04660     T cell receptor signaling pathway - Homo sapiens (human)
+  hsa04664     Fc epsilon RI signaling pathway - Homo sapiens (human)
+  hsa04668     TNF signaling pathway - Homo sapiens (human)
+  hsa04920     Adipocytokine signaling pathway - Homo sapiens (human)
+  hsa04930     Type II diabetes mellitus - Homo sapiens (human)
+  hsa04931     Insulin resistance - Homo sapiens (human)
+  hsa04932     Non-alcoholic fatty liver disease - Homo sapiens (human)
+  hsa04933     AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human)
+  hsa04936     Alcoholic liver disease - Homo sapiens (human)
+  hsa04940     Type I diabetes mellitus - Homo sapiens (human)
+  hsa05010     Alzheimer disease - Homo sapiens (human)
+  hsa05014     Amyotrophic lateral sclerosis - Homo sapiens (human)
+  hsa05020     Prion disease - Homo sapiens (human)
+  hsa05022     Pathways of neurodegeneration - multiple diseases - Homo sapiens (human)
+  hsa05130     Pathogenic Escherichia coli infection - Homo sapiens (human)
+  hsa05131     Shigellosis - Homo sapiens (human)
+  hsa05132     Salmonella infection - Homo sapiens (human)
+  hsa05133     Pertussis - Homo sapiens (human)
+  hsa05134     Legionellosis - Homo sapiens (human)
+  hsa05135     Yersinia infection - Homo sapiens (human)
+  hsa05140     Leishmaniasis - Homo sapiens (human)
+  hsa05142     Chagas disease - Homo sapiens (human)
+  hsa05143     African trypanosomiasis - Homo sapiens (human)
+  hsa05144     Malaria - Homo sapiens (human)
+  hsa05145     Toxoplasmosis - Homo sapiens (human)
+  hsa05146     Amoebiasis - Homo sapiens (human)
+  hsa05152     Tuberculosis - Homo sapiens (human)
+  hsa05160     Hepatitis C - Homo sapiens (human)
+  hsa05161     Hepatitis B - Homo sapiens (human)
+  hsa05163     Human cytomegalovirus infection - Homo sapiens (human)
+  hsa05164     Influenza A - Homo sapiens (human)
+  hsa05165     Human papillomavirus infection - Homo sapiens (human)
+  hsa05166     Human T-cell leukemia virus 1 infection - Homo sapiens (human)
+  hsa05168     Herpes simplex virus 1 infection - Homo sapiens (human)
+  hsa05169     Epstein-Barr virus infection - Homo sapiens (human)
+  hsa05170     Human immunodeficiency virus 1 infection - Homo sapiens (human)
+  hsa05171     Coronavirus disease - COVID-19 - Homo sapiens (human)
+  hsa05205     Proteoglycans in cancer - Homo sapiens (human)
+  hsa05310     Asthma - Homo sapiens (human)
+  hsa05321     Inflammatory bowel disease - Homo sapiens (human)
+  hsa05322     Systemic lupus erythematosus - Homo sapiens (human)
+  hsa05323     Rheumatoid arthritis - Homo sapiens (human)
+  hsa05330     Allograft rejection - Homo sapiens (human)
+  hsa05332     Graft-versus-host disease - Homo sapiens (human)
+  hsa05410     Hypertrophic cardiomyopathy - Homo sapiens (human)
+  hsa05414     Dilated cardiomyopathy - Homo sapiens (human)
+  hsa05417     Lipid and atherosclerosis - Homo sapiens (human)
+  hsa05418     Fluid shear stress and atherosclerosis - Homo sapiens (human)

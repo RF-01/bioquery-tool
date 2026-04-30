@@ -1,0 +1,45 @@
+======================================================================
+  Glyceraldehyde-3-phosphate dehydrogenase  (GAPDH)
+  UniProt: P04406   Length: 335 aa
+  GO terms: 38   KEGG pathways: 9
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Glyceraldehyde-3-phosphate dehydrogenase (GAPDH, Homo sapiens) is a protein of 335 amino acids. Function: Catalyzes the conversion of D-glyceraldehyde 3-phosphate (G3P) into 3-phospho-D-glyceroyl phosphate in glycolysis and the reverse reaction in gluconeogenesis. Also shows nitrosylase activity, thereby playing a role in nuclear functions. Modulates the organization and assembly of the cytoskeleton. Facilitates the CHP1-dependent microtubule and me... Localized to: Cytoplasm, cytosol; Nucleus; Cytoplasm, perinuclear region; Membrane. Top biological processes: antimicrobial humoral immune response mediated by antimicrobial peptide; canonical glycolysis; cellular response to type II interferon; defense response to fungus; killing by host of symbiont cells. Top molecular functions: aspartic-type endopeptidase inhibitor activity; disordered domain specific binding; identical protein binding; glyceraldehyde-3-phosphate dehydrogenase (NAD+) (phosphorylating) activity; microtubule binding. Cellular components: GAIT complex; cytoplasm; cytosol; extracellular exosome; lipid droplet. Participates in KEGG pathways including: Glycolysis / Gluconeogenesis; Metabolic pathways; Carbon metabolism; Biosynthesis of amino acids; HIF-1 signaling pathway; Alzheimer disease.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0097452   GAIT complex                                            [IDA]
+  GO:0005737   cytoplasm                                               [IDA]
+  GO:0005829   cytosol                                                 [IDA]
+  GO:0070062   extracellular exosome                                   [HDA]
+  GO:0005811   lipid droplet                                           [IDA]
+
+Molecular Function:
+  GO:0019828   aspartic-type endopeptidase inhibitor activity          [IDA]
+  GO:0097718   disordered domain specific binding                      [IPI]
+  GO:0042802   identical protein binding                               [IPI]
+  GO:0004365   glyceraldehyde-3-phosphate dehydrogenase (NAD+) (phosphorylating) activity [ISS]
+  GO:0008017   microtubule binding                                     [ISS]
+
+Biological Process:
+  GO:0061844   antimicrobial humoral immune response mediated by antimicrobial peptide [IDA]
+  GO:0061621   canonical glycolysis                                    [IDA]
+  GO:0071346   cellular response to type II interferon                 [IDA]
+  GO:0050832   defense response to fungus                              [IDA]
+  GO:0051873   killing by host of symbiont cells                       [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa00010     Glycolysis / Gluconeogenesis - Homo sapiens (human)
+  hsa01100     Metabolic pathways - Homo sapiens (human)
+  hsa01200     Carbon metabolism - Homo sapiens (human)
+  hsa01230     Biosynthesis of amino acids - Homo sapiens (human)
+  hsa04066     HIF-1 signaling pathway - Homo sapiens (human)
+  hsa05010     Alzheimer disease - Homo sapiens (human)
+  hsa05130     Pathogenic Escherichia coli infection - Homo sapiens (human)
+  hsa05132     Salmonella infection - Homo sapiens (human)
+  hsa05415     Diabetic cardiomyopathy - Homo sapiens (human)

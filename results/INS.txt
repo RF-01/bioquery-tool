@@ -1,0 +1,67 @@
+======================================================================
+  Insulin  (INS)
+  UniProt: P01308   Length: 110 aa
+  GO terms: 70   KEGG pathways: 31
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Insulin (INS, Homo sapiens) is a protein of 110 amino acids. Function: Insulin decreases blood glucose concentration. It increases cell permeability to monosaccharides, amino acids and fatty acids. It accelerates glycolysis, the pentose phosphate cycle, and glycogen synthesis in liver Localized to: Secreted. Top biological processes: G protein-coupled receptor signaling pathway; acute-phase response; alpha-beta T cell activation; fatty acid homeostasis; glucose homeostasis. Top molecular functions: hormone activity; identical protein binding; insulin receptor binding; insulin-like growth factor receptor binding; protease binding. Cellular components: extracellular space; Golgi lumen; Golgi membrane; endoplasmic reticulum lumen; endoplasmic reticulum-Golgi intermediate compartment membrane. Participates in KEGG pathways including: MAPK signaling pathway; Ras signaling pathway; Rap1 signaling pathway; cGMP-PKG signaling pathway; HIF-1 signaling pathway; FoxO signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0005615   extracellular space                                     [IDA]
+  GO:0005796   Golgi lumen                                             [TAS]
+  GO:0000139   Golgi membrane                                          [TAS]
+  GO:0005788   endoplasmic reticulum lumen                             [TAS]
+  GO:0033116   endoplasmic reticulum-Golgi intermediate compartment membrane [TAS]
+
+Molecular Function:
+  GO:0005179   hormone activity                                        [IMP]
+  GO:0042802   identical protein binding                               [IPI]
+  GO:0005158   insulin receptor binding                                [IDA]
+  GO:0005159   insulin-like growth factor receptor binding             [IPI]
+  GO:0002020   protease binding                                        [IPI]
+
+Biological Process:
+  GO:0007186   G protein-coupled receptor signaling pathway            [IDA]
+  GO:0006953   acute-phase response                                    [IDA]
+  GO:0046631   alpha-beta T cell activation                            [IDA]
+  GO:0055089   fatty acid homeostasis                                  [IMP]
+  GO:0042593   glucose homeostasis                                     [IMP]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa04010     MAPK signaling pathway - Homo sapiens (human)
+  hsa04014     Ras signaling pathway - Homo sapiens (human)
+  hsa04015     Rap1 signaling pathway - Homo sapiens (human)
+  hsa04022     cGMP-PKG signaling pathway - Homo sapiens (human)
+  hsa04066     HIF-1 signaling pathway - Homo sapiens (human)
+  hsa04068     FoxO signaling pathway - Homo sapiens (human)
+  hsa04072     Phospholipase D signaling pathway - Homo sapiens (human)
+  hsa04081     Hormone signaling - Homo sapiens (human)
+  hsa04114     Oocyte meiosis - Homo sapiens (human)
+  hsa04140     Autophagy - animal - Homo sapiens (human)
+  hsa04150     mTOR signaling pathway - Homo sapiens (human)
+  hsa04151     PI3K-Akt signaling pathway - Homo sapiens (human)
+  hsa04152     AMPK signaling pathway - Homo sapiens (human)
+  hsa04211     Longevity regulating pathway - Homo sapiens (human)
+  hsa04213     Longevity regulating pathway - multiple species - Homo sapiens (human)
+  hsa04810     Regulation of actin cytoskeleton - Homo sapiens (human)
+  hsa04910     Insulin signaling pathway - Homo sapiens (human)
+  hsa04911     Insulin secretion - Homo sapiens (human)
+  hsa04913     Ovarian steroidogenesis - Homo sapiens (human)
+  hsa04914     Progesterone-mediated oocyte maturation - Homo sapiens (human)
+  hsa04917     Prolactin signaling pathway - Homo sapiens (human)
+  hsa04923     Regulation of lipolysis in adipocytes - Homo sapiens (human)
+  hsa04930     Type II diabetes mellitus - Homo sapiens (human)
+  hsa04931     Insulin resistance - Homo sapiens (human)
+  hsa04932     Non-alcoholic fatty liver disease - Homo sapiens (human)
+  hsa04940     Type I diabetes mellitus - Homo sapiens (human)
+  hsa04950     Maturity onset diabetes of the young - Homo sapiens (human)
+  hsa04960     Aldosterone-regulated sodium reabsorption - Homo sapiens (human)
+  hsa05010     Alzheimer disease - Homo sapiens (human)
+  hsa05215     Prostate cancer - Homo sapiens (human)
+  hsa05415     Diabetic cardiomyopathy - Homo sapiens (human)

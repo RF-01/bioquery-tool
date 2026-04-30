@@ -1,0 +1,44 @@
+======================================================================
+  Cystic fibrosis transmembrane conductance regulator  (CFTR)
+  UniProt: P13569   Length: 1480 aa
+  GO terms: 51   KEGG pathways: 8
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Cystic fibrosis transmembrane conductance regulator (CFTR, Homo sapiens) is a protein of 1480 amino acids. Function: Epithelial ion channel that plays an important role in the regulation of epithelial ion and water transport and fluid homeostasis. Mediates the transport of chloride ions across the cell membrane. Possesses an intrinsic ATPase activity and utilizes ATP to gate its channel; the passive flow of anions through the channel is gated by cycles of ATP ... Localized to: Apical cell membrane; Early endosome membrane; Cell membrane; Recycling endosome membrane. Top biological processes: bicarbonate transport; cellular response to forskolin; chloride transmembrane transport; multicellular organismal-level water homeostasis; response to endoplasmic reticulum stress. Top molecular functions: 14-3-3 protein binding; ATP hydrolysis activity; PDZ domain binding; Sec61 translocon complex binding; bicarbonate transmembrane transporter activity. Cellular components: apical plasma membrane; cell surface; cytoplasm; cytosol; early endosome. Participates in KEGG pathways including: ABC transporters; cAMP signaling pathway; AMPK signaling pathway; Tight junction; Gastric acid secretion; Pancreatic secretion.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0016324   apical plasma membrane                                  [IDA]
+  GO:0009986   cell surface                                            [IDA]
+  GO:0005737   cytoplasm                                               [IDA]
+  GO:0005829   cytosol                                                 [IDA]
+  GO:0005769   early endosome                                          [IDA]
+
+Molecular Function:
+  GO:0071889   14-3-3 protein binding                                  [IMP]
+  GO:0016887   ATP hydrolysis activity                                 [IDA]
+  GO:0030165   PDZ domain binding                                      [IDA]
+  GO:0106138   Sec61 translocon complex binding                        [IDA]
+  GO:0015106   bicarbonate transmembrane transporter activity          [IDA]
+
+Biological Process:
+  GO:0015701   bicarbonate transport                                   [IDA]
+  GO:1904322   cellular response to forskolin                          [IDA]
+  GO:1902476   chloride transmembrane transport                        [IDA]
+  GO:0050891   multicellular organismal-level water homeostasis        [IMP]
+  GO:0034976   response to endoplasmic reticulum stress                [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa02010     ABC transporters - Homo sapiens (human)
+  hsa04024     cAMP signaling pathway - Homo sapiens (human)
+  hsa04152     AMPK signaling pathway - Homo sapiens (human)
+  hsa04530     Tight junction - Homo sapiens (human)
+  hsa04971     Gastric acid secretion - Homo sapiens (human)
+  hsa04972     Pancreatic secretion - Homo sapiens (human)
+  hsa04976     Bile secretion - Homo sapiens (human)
+  hsa05110     Vibrio cholerae infection - Homo sapiens (human)

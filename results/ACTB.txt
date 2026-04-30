@@ -1,0 +1,72 @@
+======================================================================
+  Actin, cytoplasmic 1  (ACTB)
+  UniProt: P60709   Length: 375 aa
+  GO terms: 91   KEGG pathways: 36
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Actin, cytoplasmic 1 (ACTB, Homo sapiens) is a protein of 375 amino acids. Function: Actin is a highly conserved protein that polymerizes to produce filaments that form cross-linked networks in the cytoplasm of cells. Actin exists in both monomeric (G-actin) and polymeric (F-actin) forms, both forms playing key functions, such as cell motility and contraction. In addition to their role in the cytoplasmic cytoskeleton, G- and F-a... Localized to: Cytoplasm, cytoskeleton; Nucleus. Top biological processes: adherens junction assembly; apical protein localization; cell motility; cellular response to cytochalasin B; chromatin remodeling. Top molecular functions: ATP hydrolysis activity; Tat protein binding; identical protein binding; kinesin binding; nitric-oxide synthase binding. Cellular components: NuA4 histone acetyltransferase complex; actin cytoskeleton; adherens junction; apical junction complex; blood microparticle. Participates in KEGG pathways including: ATP-dependent chromatin remodeling; Rap1 signaling pathway; Phagosome; Apoptosis; Hippo signaling pathway; Focal adhesion.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0035267   NuA4 histone acetyltransferase complex                  [IDA]
+  GO:0015629   actin cytoskeleton                                      [IDA]
+  GO:0005912   adherens junction                                       [IDA]
+  GO:0043296   apical junction complex                                 [IDA]
+  GO:0072562   blood microparticle                                     [HDA]
+
+Molecular Function:
+  GO:0016887   ATP hydrolysis activity                                 [IDA]
+  GO:0030957   Tat protein binding                                     [IPI]
+  GO:0042802   identical protein binding                               [IPI]
+  GO:0019894   kinesin binding                                         [IPI]
+  GO:0050998   nitric-oxide synthase binding                           [IPI]
+
+Biological Process:
+  GO:0034333   adherens junction assembly                              [IMP]
+  GO:0045176   apical protein localization                             [IMP]
+  GO:0048870   cell motility                                           [IMP]
+  GO:0072749   cellular response to cytochalasin B                     [IMP]
+  GO:0006338   chromatin remodeling                                    [HDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa03082     ATP-dependent chromatin remodeling - Homo sapiens (human)
+  hsa04015     Rap1 signaling pathway - Homo sapiens (human)
+  hsa04145     Phagosome - Homo sapiens (human)
+  hsa04210     Apoptosis - Homo sapiens (human)
+  hsa04390     Hippo signaling pathway - Homo sapiens (human)
+  hsa04510     Focal adhesion - Homo sapiens (human)
+  hsa04517     IgSF CAM signaling - Homo sapiens (human)
+  hsa04518     Integrin signaling - Homo sapiens (human)
+  hsa04519     Cadherin signaling - Homo sapiens (human)
+  hsa04520     Adherens junction - Homo sapiens (human)
+  hsa04530     Tight junction - Homo sapiens (human)
+  hsa04611     Platelet activation - Homo sapiens (human)
+  hsa04613     Neutrophil extracellular trap formation - Homo sapiens (human)
+  hsa04670     Leukocyte transendothelial migration - Homo sapiens (human)
+  hsa04714     Thermogenesis - Homo sapiens (human)
+  hsa04810     Regulation of actin cytoskeleton - Homo sapiens (human)
+  hsa04814     Motor proteins - Homo sapiens (human)
+  hsa04820     Cytoskeleton in muscle cells - Homo sapiens (human)
+  hsa04919     Thyroid hormone signaling pathway - Homo sapiens (human)
+  hsa04921     Oxytocin signaling pathway - Homo sapiens (human)
+  hsa04971     Gastric acid secretion - Homo sapiens (human)
+  hsa05014     Amyotrophic lateral sclerosis - Homo sapiens (human)
+  hsa05100     Bacterial invasion of epithelial cells - Homo sapiens (human)
+  hsa05110     Vibrio cholerae infection - Homo sapiens (human)
+  hsa05130     Pathogenic Escherichia coli infection - Homo sapiens (human)
+  hsa05131     Shigellosis - Homo sapiens (human)
+  hsa05132     Salmonella infection - Homo sapiens (human)
+  hsa05135     Yersinia infection - Homo sapiens (human)
+  hsa05164     Influenza A - Homo sapiens (human)
+  hsa05205     Proteoglycans in cancer - Homo sapiens (human)
+  hsa05225     Hepatocellular carcinoma - Homo sapiens (human)
+  hsa05410     Hypertrophic cardiomyopathy - Homo sapiens (human)
+  hsa05412     Arrhythmogenic right ventricular cardiomyopathy - Homo sapiens (human)
+  hsa05414     Dilated cardiomyopathy - Homo sapiens (human)
+  hsa05416     Viral myocarditis - Homo sapiens (human)
+  hsa05418     Fluid shear stress and atherosclerosis - Homo sapiens (human)

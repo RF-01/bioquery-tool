@@ -1,0 +1,64 @@
+======================================================================
+  Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN  (PTEN)
+  UniProt: P60484   Length: 403 aa
+  GO terms: 93   KEGG pathways: 28
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN (PTEN, Homo sapiens) is a protein of 403 amino acids. Function: Dual-specificity protein phosphatase, dephosphorylating tyrosine-, serine- and threonine-phosphorylated proteins. Also functions as a lipid phosphatase, removing the phosphate in the D3 position of the inositol ring of PtdIns(3,4,5)P3/phosphatidylinositol 3,4,5-trisphosphate, PtdIns(3,4)P2/phosphatidylinositol 3,4-diphosphate and PtdIns3P/phosph... Localized to: Cytoplasm; Nucleus; Nucleus, PML body; Cell projection, dendritic spine. Top biological processes: cellular response to electrical stimulus; negative regulation of G1/S transition of mitotic cell cycle; negative regulation of cell cycle G1/S phase transition; negative regulation of cell migration; negative regulation of cell population proliferation. Top molecular functions: PDZ domain binding; anaphase-promoting complex binding; beta-catenin binding; enzyme binding; identical protein binding. Cellular components: apical plasma membrane; cell projection; cytoplasm; cytoplasmic side of plasma membrane; cytosol. Participates in KEGG pathways including: Inositol phosphate metabolism; Metabolic pathways; EGFR tyrosine kinase inhibitor resistance; FoxO signaling pathway; Phosphatidylinositol signaling system; Sphingolipid signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0016324   apical plasma membrane                                  [IMP]
+  GO:0042995   cell projection                                         [IDA]
+  GO:0005737   cytoplasm                                               [IDA]
+  GO:0009898   cytoplasmic side of plasma membrane                     [IDA]
+  GO:0005829   cytosol                                                 [IDA]
+
+Molecular Function:
+  GO:0030165   PDZ domain binding                                      [IPI]
+  GO:0010997   anaphase-promoting complex binding                      [IPI]
+  GO:0008013   beta-catenin binding                                    [IPI]
+  GO:0019899   enzyme binding                                          [IPI]
+  GO:0042802   identical protein binding                               [IPI]
+
+Biological Process:
+  GO:0071257   cellular response to electrical stimulus                [IMP]
+  GO:2000134   negative regulation of G1/S transition of mitotic cell cycle [IDA]
+  GO:1902807   negative regulation of cell cycle G1/S phase transition [IDA]
+  GO:0030336   negative regulation of cell migration                   [IMP]
+  GO:0008285   negative regulation of cell population proliferation    [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa00562     Inositol phosphate metabolism - Homo sapiens (human)
+  hsa01100     Metabolic pathways - Homo sapiens (human)
+  hsa01521     EGFR tyrosine kinase inhibitor resistance - Homo sapiens (human)
+  hsa04068     FoxO signaling pathway - Homo sapiens (human)
+  hsa04070     Phosphatidylinositol signaling system - Homo sapiens (human)
+  hsa04071     Sphingolipid signaling pathway - Homo sapiens (human)
+  hsa04115     p53 signaling pathway - Homo sapiens (human)
+  hsa04140     Autophagy - animal - Homo sapiens (human)
+  hsa04150     mTOR signaling pathway - Homo sapiens (human)
+  hsa04151     PI3K-Akt signaling pathway - Homo sapiens (human)
+  hsa04218     Cellular senescence - Homo sapiens (human)
+  hsa04510     Focal adhesion - Homo sapiens (human)
+  hsa04931     Insulin resistance - Homo sapiens (human)
+  hsa05165     Human papillomavirus infection - Homo sapiens (human)
+  hsa05166     Human T-cell leukemia virus 1 infection - Homo sapiens (human)
+  hsa05200     Pathways in cancer - Homo sapiens (human)
+  hsa05206     MicroRNAs in cancer - Homo sapiens (human)
+  hsa05208     Chemical carcinogenesis - reactive oxygen species - Homo sapiens (human)
+  hsa05213     Endometrial cancer - Homo sapiens (human)
+  hsa05214     Glioma - Homo sapiens (human)
+  hsa05215     Prostate cancer - Homo sapiens (human)
+  hsa05218     Melanoma - Homo sapiens (human)
+  hsa05222     Small cell lung cancer - Homo sapiens (human)
+  hsa05224     Breast cancer - Homo sapiens (human)
+  hsa05225     Hepatocellular carcinoma - Homo sapiens (human)
+  hsa05230     Central carbon metabolism in cancer - Homo sapiens (human)
+  hsa05235     PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human)
+  hsa05415     Diabetic cardiomyopathy - Homo sapiens (human)

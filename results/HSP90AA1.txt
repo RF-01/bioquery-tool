@@ -1,0 +1,51 @@
+======================================================================
+  Heat shock protein HSP 90-alpha  (HSP90AA1)
+  UniProt: P07900   Length: 732 aa
+  GO terms: 96   KEGG pathways: 15
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Heat shock protein HSP 90-alpha (HSP90AA1, Homo sapiens) is a protein of 732 amino acids. Function: Molecular chaperone that promotes the maturation, structural maintenance and proper regulation of specific target proteins involved for instance in cell cycle control and signal transduction. Undergoes a functional cycle that is linked to its ATPase activity which is essential for its chaperone activity. This cycle probably induces conformationa... Localized to: Nucleus; Cytoplasm; Melanosome; Cell membrane. Top biological processes: activation of innate immune response; cellular response to virus; chaperone-mediated protein complex assembly; neurofibrillary tangle assembly; positive regulation of defense response to virus by host. Top molecular functions: ATP binding; ATP hydrolysis activity; DNA polymerase binding; GTPase binding; MHC class II protein complex binding. Cellular components: cytoplasm; cytosol; extracellular exosome; membrane; mitochondrion. Participates in KEGG pathways including: Protein processing in endoplasmic reticulum; PI3K-Akt signaling pathway; Necroptosis; Antigen processing and presentation; NOD-like receptor signaling pathway; IL-17 signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0005737   cytoplasm                                               [IDA]
+  GO:0005829   cytosol                                                 [IDA]
+  GO:0070062   extracellular exosome                                   [HDA]
+  GO:0016020   membrane                                                [HDA]
+  GO:0005739   mitochondrion                                           [IDA]
+
+Molecular Function:
+  GO:0005524   ATP binding                                             [IDA]
+  GO:0016887   ATP hydrolysis activity                                 [IDA]
+  GO:0070182   DNA polymerase binding                                  [IPI]
+  GO:0051020   GTPase binding                                          [IPI]
+  GO:0023026   MHC class II protein complex binding                    [HDA]
+
+Biological Process:
+  GO:0002218   activation of innate immune response                    [IDA]
+  GO:0098586   cellular response to virus                              [IDA]
+  GO:0051131   chaperone-mediated protein complex assembly             [IDA]
+  GO:1902988   neurofibrillary tangle assembly                         [IDA]
+  GO:0002230   positive regulation of defense response to virus by host [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa04141     Protein processing in endoplasmic reticulum - Homo sapiens (human)
+  hsa04151     PI3K-Akt signaling pathway - Homo sapiens (human)
+  hsa04217     Necroptosis - Homo sapiens (human)
+  hsa04612     Antigen processing and presentation - Homo sapiens (human)
+  hsa04621     NOD-like receptor signaling pathway - Homo sapiens (human)
+  hsa04657     IL-17 signaling pathway - Homo sapiens (human)
+  hsa04659     Th17 cell differentiation - Homo sapiens (human)
+  hsa04914     Progesterone-mediated oocyte maturation - Homo sapiens (human)
+  hsa04915     Estrogen signaling pathway - Homo sapiens (human)
+  hsa05132     Salmonella infection - Homo sapiens (human)
+  hsa05200     Pathways in cancer - Homo sapiens (human)
+  hsa05207     Chemical carcinogenesis - receptor activation - Homo sapiens (human)
+  hsa05215     Prostate cancer - Homo sapiens (human)
+  hsa05417     Lipid and atherosclerosis - Homo sapiens (human)
+  hsa05418     Fluid shear stress and atherosclerosis - Homo sapiens (human)

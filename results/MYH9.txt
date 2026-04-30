@@ -1,0 +1,44 @@
+======================================================================
+  Myosin-9  (MYH9)
+  UniProt: P35579   Length: 1960 aa
+  GO terms: 75   KEGG pathways: 8
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Myosin-9 (MYH9, Homo sapiens) is a protein of 1960 amino acids. Function: Cellular myosin that appears to play a role in cytokinesis, cell shape, and specialized functions such as secretion and capping. Required for cortical actin clearance prior to oocyte exocytosis. Promotes cell motility in conjunction with S100A4. During cell spreading, plays an important role in cytoskeleton reorganization, focal contact formatio... Localized to: Cytoplasm, cytoskeleton; Cytoplasm, cell cortex; Cytoplasmic vesicle, secretory vesicle, Cortical granule; Cell membrane. Top biological processes: actin cytoskeleton organization; actin filament-based movement; actomyosin structure organization; angiogenesis; blood vessel endothelial cell migration. Top molecular functions: ADP binding; ATP binding; RNA binding; actin binding; actin filament binding. Cellular components: actin cytoskeleton; actomyosin; actomyosin contractile ring; cell leading edge; cell surface. Participates in KEGG pathways including: Virion; Vascular smooth muscle contraction; IgSF CAM signaling; Tight junction; Regulation of actin cytoskeleton; Motor proteins.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0015629   actin cytoskeleton                                      [IDA]
+  GO:0042641   actomyosin                                              [IDA]
+  GO:0005826   actomyosin contractile ring                             [IDA]
+  GO:0031252   cell leading edge                                       [IDA]
+  GO:0009986   cell surface                                            [IDA]
+
+Molecular Function:
+  GO:0043531   ADP binding                                             [IDA]
+  GO:0005524   ATP binding                                             [IDA]
+  GO:0003723   RNA binding                                             [HDA]
+  GO:0003779   actin binding                                           [IDA]
+  GO:0051015   actin filament binding                                  [IDA]
+
+Biological Process:
+  GO:0030036   actin cytoskeleton organization                         [IMP]
+  GO:0030048   actin filament-based movement                           [IDA]
+  GO:0031032   actomyosin structure organization                       [IDA]
+  GO:0001525   angiogenesis                                            [IDA]
+  GO:0043534   blood vessel endothelial cell migration                 [IMP]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa03273     Virion - Lassa virus and SFTS virus - Homo sapiens (human)
+  hsa04270     Vascular smooth muscle contraction - Homo sapiens (human)
+  hsa04517     IgSF CAM signaling - Homo sapiens (human)
+  hsa04530     Tight junction - Homo sapiens (human)
+  hsa04810     Regulation of actin cytoskeleton - Homo sapiens (human)
+  hsa04814     Motor proteins - Homo sapiens (human)
+  hsa04820     Cytoskeleton in muscle cells - Homo sapiens (human)
+  hsa05130     Pathogenic Escherichia coli infection - Homo sapiens (human)

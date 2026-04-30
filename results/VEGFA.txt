@@ -1,0 +1,61 @@
+======================================================================
+  Vascular endothelial growth factor A, long form  (VEGFA)
+  UniProt: P15692   Length: 395 aa
+  GO terms: 144   KEGG pathways: 25
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Vascular endothelial growth factor A, long form (VEGFA, Homo sapiens) is a protein of 395 amino acids. Function: Participates in the induction of key genes involved in the response to hypoxia and in the induction of angiogenesis such as HIF1A. Involved in protecting cells from hypoxia-mediated cell death Localized to: Cytoplasm; Nucleus; Secreted; Endoplasmic reticulum. Top biological processes: VEGF-activated neuropilin signaling pathway; angiogenesis; basophil chemotaxis; branching involved in blood vessel morphogenesis; cell migration involved in sprouting angiogenesis. Top molecular functions: chemoattractant activity; cytokine activity; fibronectin binding; growth factor activity; heparin binding. Cellular components: VEGF-A complex; adherens junction; cell surface; cytoplasm; extracellular space. Participates in KEGG pathways including: EGFR tyrosine kinase inhibitor resistance; MAPK signaling pathway; Ras signaling pathway; Rap1 signaling pathway; Calcium signaling pathway; HIF-1 signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:1990150   VEGF-A complex                                          [IPI]
+  GO:0005912   adherens junction                                       [IDA]
+  GO:0009986   cell surface                                            [IDA]
+  GO:0005737   cytoplasm                                               [IDA]
+  GO:0005615   extracellular space                                     [IDA]
+
+Molecular Function:
+  GO:0042056   chemoattractant activity                                [IDA]
+  GO:0005125   cytokine activity                                       [IDA]
+  GO:0001968   fibronectin binding                                     [IDA]
+  GO:0008083   growth factor activity                                  [IDA]
+  GO:0008201   heparin binding                                         [IDA]
+
+Biological Process:
+  GO:0038190   VEGF-activated neuropilin signaling pathway             [IMP]
+  GO:0001525   angiogenesis                                            [IDA]
+  GO:0002575   basophil chemotaxis                                     [IDA]
+  GO:0001569   branching involved in blood vessel morphogenesis        [IMP]
+  GO:0002042   cell migration involved in sprouting angiogenesis       [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa01521     EGFR tyrosine kinase inhibitor resistance - Homo sapiens (human)
+  hsa04010     MAPK signaling pathway - Homo sapiens (human)
+  hsa04014     Ras signaling pathway - Homo sapiens (human)
+  hsa04015     Rap1 signaling pathway - Homo sapiens (human)
+  hsa04020     Calcium signaling pathway - Homo sapiens (human)
+  hsa04066     HIF-1 signaling pathway - Homo sapiens (human)
+  hsa04151     PI3K-Akt signaling pathway - Homo sapiens (human)
+  hsa04370     VEGF signaling pathway - Homo sapiens (human)
+  hsa04510     Focal adhesion - Homo sapiens (human)
+  hsa04518     Integrin signaling - Homo sapiens (human)
+  hsa04926     Relaxin signaling pathway - Homo sapiens (human)
+  hsa04933     AGE-RAGE signaling pathway in diabetic complications - Homo sapiens (human)
+  hsa05163     Human cytomegalovirus infection - Homo sapiens (human)
+  hsa05165     Human papillomavirus infection - Homo sapiens (human)
+  hsa05167     Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human)
+  hsa05200     Pathways in cancer - Homo sapiens (human)
+  hsa05205     Proteoglycans in cancer - Homo sapiens (human)
+  hsa05206     MicroRNAs in cancer - Homo sapiens (human)
+  hsa05207     Chemical carcinogenesis - receptor activation - Homo sapiens (human)
+  hsa05208     Chemical carcinogenesis - reactive oxygen species - Homo sapiens (human)
+  hsa05211     Renal cell carcinoma - Homo sapiens (human)
+  hsa05212     Pancreatic cancer - Homo sapiens (human)
+  hsa05219     Bladder cancer - Homo sapiens (human)
+  hsa05323     Rheumatoid arthritis - Homo sapiens (human)
+  hsa05418     Fluid shear stress and atherosclerosis - Homo sapiens (human)

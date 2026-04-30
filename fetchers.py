@@ -3,30 +3,62 @@ fetchers.py
 API clients for UniProt and KEGG.
 GO annotations are extracted from UniProt's cross-references, which contain
 the GO ID, term name, aspect (P/F/C), and evidence code — avoiding a second API.
+
+Phase C additions:
+- fetch_uniprot_by_gene now returns ALL reviewed hits (up to 5) so the caller
+  can detect ambiguous symbols and let the user choose.
+- Network errors are caught and re-raised as FetchError with a human-readable message.
+- Obsolete / not-found symbols return an empty list rather than None.
 """
 
 import requests
 from typing import Optional, Dict, Any, List
 
 UNIPROT_BASE = "https://rest.uniprot.org/uniprotkb"
-KEGG_BASE = "https://rest.kegg.jp"
-HEADERS = {"Accept": "application/json"}
-TIMEOUT = 30
+KEGG_BASE    = "https://rest.kegg.jp"
+HEADERS      = {"Accept": "application/json"}
+TIMEOUT      = 30
+
+
+class FetchError(RuntimeError):
+    """Raised when a network call fails after retries."""
 
 
 # ---------- UniProt ----------
 
-def fetch_uniprot_by_gene(gene_symbol: str, organism_id: int = 9606) -> Optional[Dict[str, Any]]:
+def fetch_uniprot_by_gene(
+    gene_symbol: str,
+    organism_id: int = 9606,
+    max_hits: int = 5,
+) -> List[Dict[str, Any]]:
     """
-    Search UniProt for a reviewed (Swiss-Prot) entry matching gene symbol + organism.
-    Default organism is human (taxon 9606). Returns the top hit as a dict, or None.
+    Search UniProt for reviewed (Swiss-Prot) entries matching gene symbol + organism.
+    Returns up to *max_hits* results as a list of raw entry dicts.
+
+    Returning a list (instead of a single entry) lets the pipeline:
+      - return an error when nothing is found (empty list)
+      - warn the user when several proteins match the same symbol (ambiguous)
+      - just use results[0] in the normal single-match case
     """
-    query = f"(gene:{gene_symbol}) AND (organism_id:{organism_id}) AND (reviewed:true)"
-    params = {"query": query, "format": "json", "size": 1}
-    r = requests.get(f"{UNIPROT_BASE}/search", params=params, headers=HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    results = r.json().get("results", [])
-    return results[0] if results else None
+    query  = f"(gene:{gene_symbol}) AND (organism_id:{organism_id}) AND (reviewed:true)"
+    params = {"query": query, "format": "json", "size": max_hits}
+    try:
+        r = requests.get(
+            f"{UNIPROT_BASE}/search", params=params, headers=HEADERS, timeout=TIMEOUT
+        )
+        r.raise_for_status()
+    except requests.exceptions.ConnectionError:
+        raise FetchError(
+            "Could not reach UniProt. Please check your internet connection."
+        )
+    except requests.exceptions.Timeout:
+        raise FetchError(
+            "UniProt request timed out. The server may be busy — try again shortly."
+        )
+    except requests.exceptions.HTTPError as exc:
+        raise FetchError(f"UniProt returned an error: {exc.response.status_code}")
+
+    return r.json().get("results", [])
 
 
 def parse_uniprot_entry(entry: Dict[str, Any]) -> Dict[str, Any]:
@@ -34,18 +66,18 @@ def parse_uniprot_entry(entry: Dict[str, Any]) -> Dict[str, Any]:
     Flatten a raw UniProt JSON entry into a clean dict the rest of the pipeline uses.
     """
     out: Dict[str, Any] = {
-        "accession": entry.get("primaryAccession"),
-        "uniprot_id": entry.get("uniProtkbId"),
-        "protein_name": None,
-        "gene_names": [],
-        "organism": None,
-        "length": entry.get("sequence", {}).get("length"),
-        "function_text": [],
-        "subcellular_location": [],
-        "keywords": [],
-        "go_annotations": [],   # list of {id, term, aspect, evidence}
-        "kegg_ids": [],
-        "pdb_ids": [],
+        "accession":           entry.get("primaryAccession"),
+        "uniprot_id":          entry.get("uniProtkbId"),
+        "protein_name":        None,
+        "gene_names":          [],
+        "organism":            None,
+        "length":              entry.get("sequence", {}).get("length"),
+        "function_text":       [],
+        "subcellular_location":[],
+        "keywords":            [],
+        "go_annotations":      [],   # list of {id, term, aspect, evidence}
+        "kegg_ids":            [],
+        "pdb_ids":             [],
     }
 
     # Protein name
@@ -82,14 +114,13 @@ def parse_uniprot_entry(entry: Dict[str, Any]) -> Dict[str, Any]:
 
     # Cross references — GO, KEGG, PDB
     for ref in entry.get("uniProtKBCrossReferences", []):
-        db = ref.get("database")
+        db  = ref.get("database")
         rid = ref.get("id")
         if db == "GO":
             term, aspect, evidence = None, None, None
             for p in ref.get("properties", []):
                 k, v = p.get("key"), p.get("value")
                 if k == "GoTerm" and v:
-                    # Format "P:DNA repair" — first char is aspect code
                     if ":" in v:
                         code, term_name = v.split(":", 1)
                         aspect = {"P": "Biological Process",
@@ -99,7 +130,7 @@ def parse_uniprot_entry(entry: Dict[str, Any]) -> Dict[str, Any]:
                     else:
                         term = v
                 elif k == "GoEvidenceType" and v:
-                    evidence = v.split(":", 1)[0]   # e.g. "IDA:UniProtKB" -> "IDA"
+                    evidence = v.split(":", 1)[0]
             out["go_annotations"].append(
                 {"id": rid, "term": term, "aspect": aspect, "evidence": evidence}
             )
@@ -117,10 +148,22 @@ def fetch_kegg_pathways(kegg_gene_id: str) -> List[Dict[str, str]]:
     """
     Given a KEGG gene id like 'hsa:7157', return all linked pathways as
     a list of {id, name} dicts.
+    Raises FetchError on network problems.
     """
-    # Step 1: get pathway IDs linked to this gene
-    r = requests.get(f"{KEGG_BASE}/link/pathway/{kegg_gene_id}", timeout=TIMEOUT)
-    r.raise_for_status()
+    try:
+        r = requests.get(
+            f"{KEGG_BASE}/link/pathway/{kegg_gene_id}", timeout=TIMEOUT
+        )
+        r.raise_for_status()
+    except requests.exceptions.ConnectionError:
+        raise FetchError(
+            "Could not reach KEGG. Please check your internet connection."
+        )
+    except requests.exceptions.Timeout:
+        raise FetchError("KEGG request timed out — try again shortly.")
+    except requests.exceptions.HTTPError as exc:
+        raise FetchError(f"KEGG returned an error: {exc.response.status_code}")
+
     pathway_ids = []
     for line in r.text.strip().splitlines():
         parts = line.split("\t")
@@ -130,10 +173,16 @@ def fetch_kegg_pathways(kegg_gene_id: str) -> List[Dict[str, str]]:
     if not pathway_ids:
         return []
 
-    # Step 2: pull the master human pathway list once and look up names
-    org = kegg_gene_id.split(":")[0]   # e.g. 'hsa'
-    r2 = requests.get(f"{KEGG_BASE}/list/pathway/{org}", timeout=TIMEOUT)
-    r2.raise_for_status()
+    org = kegg_gene_id.split(":")[0]
+    try:
+        r2 = requests.get(
+            f"{KEGG_BASE}/list/pathway/{org}", timeout=TIMEOUT
+        )
+        r2.raise_for_status()
+    except Exception:
+        # Non-fatal: return IDs without names rather than crashing
+        return [{"id": pid, "name": pid} for pid in pathway_ids]
+
     name_map = {}
     for line in r2.text.strip().splitlines():
         parts = line.split("\t")

@@ -1,0 +1,38 @@
+======================================================================
+  Apolipoprotein E  (APOE)
+  UniProt: P02649   Length: 317 aa
+  GO terms: 150   KEGG pathways: 2
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Apolipoprotein E (APOE, Homo sapiens) is a protein of 317 amino acids. Function: APOE is an apolipoprotein, a protein associating with lipid particles, that mainly functions in lipoprotein-mediated lipid transport between organs via the plasma and interstitial fluids. APOE is a core component of plasma lipoproteins and is involved in their production, conversion and clearance. Apolipoproteins are amphipathic molecules that i... Localized to: Secreted; Secreted, extracellular space; Secreted, extracellular space, extracellular matrix; Extracellular vesicle. Top biological processes: AMPA glutamate receptor clustering; G protein-coupled receptor signaling pathway; NMDA glutamate receptor clustering; amyloid precursor protein metabolic process; cellular response to lipoprotein particle stimulus. Top molecular functions: amyloid-beta binding; antioxidant activity; enzyme binding; heparan sulfate proteoglycan binding; heparin binding. Cellular components: Golgi apparatus; blood microparticle; chylomicron; chylomicron remnant; endoplasmic reticulum. Participates in KEGG pathways including: Cholesterol metabolism; Alzheimer disease.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0005794   Golgi apparatus                                         [IDA]
+  GO:0072562   blood microparticle                                     [HDA]
+  GO:0042627   chylomicron                                             [IDA]
+  GO:0034360   chylomicron remnant                                     [IDA]
+  GO:0005783   endoplasmic reticulum                                   [IDA]
+
+Molecular Function:
+  GO:0001540   amyloid-beta binding                                    [IDA]
+  GO:0016209   antioxidant activity                                    [IDA]
+  GO:0019899   enzyme binding                                          [IPI]
+  GO:0043395   heparan sulfate proteoglycan binding                    [IDA]
+  GO:0008201   heparin binding                                         [IDA]
+
+Biological Process:
+  GO:0097113   AMPA glutamate receptor clustering                      [IDA]
+  GO:0007186   G protein-coupled receptor signaling pathway            [IDA]
+  GO:0097114   NMDA glutamate receptor clustering                      [IDA]
+  GO:0042982   amyloid precursor protein metabolic process             [IDA]
+  GO:0071402   cellular response to lipoprotein particle stimulus      [IDA]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa04979     Cholesterol metabolism - Homo sapiens (human)
+  hsa05010     Alzheimer disease - Homo sapiens (human)

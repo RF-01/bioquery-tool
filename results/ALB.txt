@@ -1,0 +1,27 @@
+======================================================================
+  Fas-binding factor 1  (FBF1)
+  UniProt: Q8TES7   Length: 1133 aa
+  GO terms: 12   KEGG pathways: 0
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Fas-binding factor 1 (FBF1, Homo sapiens) is a protein of 1133 amino acids. Function: Keratin-binding protein required for epithelial cell polarization. Involved in apical junction complex (AJC) assembly via its interaction with PARD3. Required for ciliogenesis Localized to: Cytoplasm, cytoskeleton, microtubule organizing center, centrosome, centriole; Cytoplasm, cytoskeleton, spindle pole; Cell junction. Top biological processes: apical junction assembly; cilium assembly; establishment of epithelial cell polarity. Cellular components: centriole; centrosome; ciliary basal body; ciliary transition fiber; ciliary transition zone.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0005814   centriole                                               [IDA]
+  GO:0005813   centrosome                                              [IDA]
+  GO:0036064   ciliary basal body                                      [IDA]
+  GO:0097539   ciliary transition fiber                                [IDA]
+  GO:0035869   ciliary transition zone                                 [IDA]
+
+Biological Process:
+  GO:0043297   apical junction assembly                                [IMP]
+  GO:0060271   cilium assembly                                         [IMP]
+  GO:0090162   establishment of epithelial cell polarity               [IMP]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------

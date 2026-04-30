@@ -1,0 +1,70 @@
+======================================================================
+  Myc proto-oncogene protein  (MYC)
+  UniProt: P01106   Length: 454 aa
+  GO terms: 85   KEGG pathways: 34
+======================================================================
+
+INTERPRETIVE SUMMARY
+----------------------------------------------------------------------
+Myc proto-oncogene protein (MYC, Homo sapiens) is a protein of 454 amino acids. Function: Transcription factor that binds DNA in a non-specific manner, yet also specifically recognizes the core sequence 5'-CAC[GA]TG-3'. Activates the transcription of growth-related genes. Binds to the VEGFA promoter, promoting VEGFA production and subsequent sprouting angiogenesis. Regulator of somatic reprogramming, controls self-renewal of embryoni... Localized to: Nucleus, nucleoplasm; Nucleus, nucleolus; Nucleus; Cytoplasm. Top biological processes: DNA damage response; ERK1 and ERK2 cascade; G1/S transition of mitotic cell cycle; MAPK cascade; cellular response to UV. Top molecular functions: DNA-binding transcription activator activity, RNA polymerase II-specific; DNA-binding transcription factor activity, RNA polymerase II-specific; DNA-binding transcription factor binding; DNA-binding transcription repressor activity, RNA polymerase II-specific; E-box binding. Cellular components: Myc-Max complex; RNA polymerase II transcription repressor complex; chromatin; nucleolus; nucleoplasm. Participates in KEGG pathways including: MAPK signaling pathway; ErbB signaling pathway; Cell cycle; PI3K-Akt signaling pathway; Cellular senescence; Wnt signaling pathway.
+
+TOP GO TERMS BY ASPECT
+----------------------------------------------------------------------
+
+Cellular Component:
+  GO:0071943   Myc-Max complex                                         [IPI]
+  GO:0090571   RNA polymerase II transcription repressor complex       [IPI]
+  GO:0000785   chromatin                                               [IDA]
+  GO:0005730   nucleolus                                               [IDA]
+  GO:0005654   nucleoplasm                                             [IDA]
+
+Molecular Function:
+  GO:0001228   DNA-binding transcription activator activity, RNA polymerase II-specific [IDA]
+  GO:0000981   DNA-binding transcription factor activity, RNA polymerase II-specific [IDA]
+  GO:0140297   DNA-binding transcription factor binding                [IPI]
+  GO:0001227   DNA-binding transcription repressor activity, RNA polymerase II-specific [IDA]
+  GO:0070888   E-box binding                                           [IDA]
+
+Biological Process:
+  GO:0006974   DNA damage response                                     [IDA]
+  GO:0070371   ERK1 and ERK2 cascade                                   [IDA]
+  GO:0000082   G1/S transition of mitotic cell cycle                   [IDA]
+  GO:0000165   MAPK cascade                                            [IMP]
+  GO:0034644   cellular response to UV                                 [IEP]
+
+KEGG PATHWAYS
+----------------------------------------------------------------------
+  hsa04010     MAPK signaling pathway - Homo sapiens (human)
+  hsa04012     ErbB signaling pathway - Homo sapiens (human)
+  hsa04110     Cell cycle - Homo sapiens (human)
+  hsa04151     PI3K-Akt signaling pathway - Homo sapiens (human)
+  hsa04218     Cellular senescence - Homo sapiens (human)
+  hsa04310     Wnt signaling pathway - Homo sapiens (human)
+  hsa04350     TGF-beta signaling pathway - Homo sapiens (human)
+  hsa04390     Hippo signaling pathway - Homo sapiens (human)
+  hsa04550     Signaling pathways regulating pluripotency of stem cells - Homo sapiens (human)
+  hsa04630     JAK-STAT signaling pathway - Homo sapiens (human)
+  hsa04919     Thyroid hormone signaling pathway - Homo sapiens (human)
+  hsa05132     Salmonella infection - Homo sapiens (human)
+  hsa05160     Hepatitis C - Homo sapiens (human)
+  hsa05161     Hepatitis B - Homo sapiens (human)
+  hsa05163     Human cytomegalovirus infection - Homo sapiens (human)
+  hsa05166     Human T-cell leukemia virus 1 infection - Homo sapiens (human)
+  hsa05167     Kaposi sarcoma-associated herpesvirus infection - Homo sapiens (human)
+  hsa05169     Epstein-Barr virus infection - Homo sapiens (human)
+  hsa05200     Pathways in cancer - Homo sapiens (human)
+  hsa05202     Transcriptional misregulation in cancer - Homo sapiens (human)
+  hsa05205     Proteoglycans in cancer - Homo sapiens (human)
+  hsa05206     MicroRNAs in cancer - Homo sapiens (human)
+  hsa05207     Chemical carcinogenesis - receptor activation - Homo sapiens (human)
+  hsa05210     Colorectal cancer - Homo sapiens (human)
+  hsa05213     Endometrial cancer - Homo sapiens (human)
+  hsa05216     Thyroid cancer - Homo sapiens (human)
+  hsa05219     Bladder cancer - Homo sapiens (human)
+  hsa05220     Chronic myeloid leukemia - Homo sapiens (human)
+  hsa05221     Acute myeloid leukemia - Homo sapiens (human)
+  hsa05222     Small cell lung cancer - Homo sapiens (human)
+  hsa05224     Breast cancer - Homo sapiens (human)
+  hsa05225     Hepatocellular carcinoma - Homo sapiens (human)
+  hsa05226     Gastric cancer - Homo sapiens (human)
+  hsa05230     Central carbon metabolism in cancer - Homo sapiens (human)
